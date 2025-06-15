@@ -33,8 +33,6 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        session()->flash('status', 'ログインに成功しました！');
-
         return redirect()->intended(route('dashboard', absolute: false));
     }
 
