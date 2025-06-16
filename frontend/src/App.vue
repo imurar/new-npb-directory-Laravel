@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <Hello />
+    <router-view />
   </div>
 </template>
 
 <script>
-import Hello from './components/HelloWorld.vue'
+import Dashboad from './Pages/Dashboard.vue'
 
 export default {
   name: 'App',
   components: {
-    Hello
+    Dashboard
   }
 }
 </script>
